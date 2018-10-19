@@ -12,7 +12,7 @@ PROJECT-SPECIFIC
 __pycache__/
 *.py[cod]
 *$py.class
-
+gelweb/gelweb/static_files/
 # C extensions
 *.so
 
@@ -109,3 +109,11 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# sqlite
+
+gelweb.db
+
+# logs
+gelweb/logs/*
+

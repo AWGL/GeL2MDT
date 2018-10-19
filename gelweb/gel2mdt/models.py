@@ -306,7 +306,7 @@ class GELInterpretationReport(models.Model):
     assembly = models.ForeignKey(ToolOrAssemblyVersion, on_delete=models.CASCADE)
 
     user = models.CharField(max_length=200)
-    assigned_user = models.ForeignKey(settings.AUTH_USER_MODEL, null=True, on_delete=models.SET_NULL)
+    assigned_user = models.ForeignKey(settings.AUTH_USER_MODEL, null=True,blank=True, on_delete=models.SET_NULL)
 
     # sha hash to allow quick determination of differences each update
     sha_hash = models.CharField(max_length=200)
